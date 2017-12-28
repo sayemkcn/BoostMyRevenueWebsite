@@ -10,8 +10,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,dt,dd{
 @media only screen and (max-width: 500px) {
 
     #websiteTitle{
-        margin-top: 100px;
-        font-size: 120%;
+        visibility: none;
+        /* margin-top: 100px;
+        font-size: 120%; */
     }
      #slogan, #sloganDetails{
         font-size: 100%;
@@ -20,6 +21,6 @@ h1,h2,h3,h4,h5,h6,p,a,span,dt,dd{
 
 @media only screen and (min-width: 991px) {
     .bMembersImg{
-        height: 200px;
+        height: 300px;
     }
 }

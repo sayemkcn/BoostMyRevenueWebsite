@@ -3,9 +3,19 @@ h1,h2,h3,h4,h5,h6,p,a,span,dt,dd{
     font-family: "Siyamrupali", Times, serif;
 }
 
+.btnText{
+    text-shadow: 2px 2px 3px #000000;
+}
+
 @media only screen and (max-width: 500px) {
-    #mainSection{
+    /* #mainSection{
         margin-top: 100px;
+    } */
+    #websiteTitle{
+        font-size: 120%;
+    }
+     #slogan, #sloganDetails{
+        font-size: 100%;
     }
 }
 

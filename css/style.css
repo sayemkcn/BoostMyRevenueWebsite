@@ -8,9 +8,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,dt,dd{
 }
 
 @media only screen and (max-width: 500px) {
-    /* #mainSection{
+    #mainSection{
         margin-top: 100px;
-    } */
+    }
     #websiteTitle{
         font-size: 120%;
     }

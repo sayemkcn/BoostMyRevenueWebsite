@@ -71,7 +71,7 @@
             <div class="container">
                 <a class="navbar-brand" href="./index.html">
                     <img src="./img/smr-logo.png" height="40px;">
-                    <span class="text text-warning">শেয়ার</span>মাই<span class="text text-warning">রেভিনিউ</span>
+                    <span class="text text-warning">শেয়ার</span>মাই<span class="text text-warning">রেভিনিউ</span><img <img style="margin-bottom:10px;" src="https://camo.githubusercontent.com/f14230be988bea4f727ecb752abcf9c7fff52514/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f353539353638322f313235343536352f65623337396565382d326237372d313165332d383333302d3537643139653236383166312e676966"></img>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -117,6 +117,8 @@
                 <div class="container">
                     <ul>
                         <li>
+                            <h3 style="color: white;">ShareMyRevenue Will Be Launched in <h1 class="text text-warning" id="countdown"></h1></h3><hr/>
+
                             <h1 class="h1-responsive font-bold wow fadeInDown" data-wow-delay="0.2s" id="websiteTitle">
                                 <span class="text text-warning">শেয়ার</span>মাই<span class="text text-warning">রেভিনিউ</span>
                             </h1>
@@ -549,6 +551,40 @@
         new WOW().init();
     </script>
 
+    <script>
+        var end = new Date('01/01/2018 06:1 AM');
+        
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+    
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+    
+                clearInterval(timer);
+                document.getElementById('countdown').innerHTML = 'We are Live!!';
+    
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+    
+            document.getElementById('countdown').innerHTML = days + ' Days ';
+            document.getElementById('countdown').innerHTML += hours + ' Hours ';
+            document.getElementById('countdown').innerHTML += minutes + 'Mins ';
+            document.getElementById('countdown').innerHTML += 'and '+ seconds + 'Secs';
+
+        }
+    
+        timer = setInterval(showRemaining, 1000);
+        showRemaining();
+    </script>
 
 </body>
 

@@ -1,6 +1,15 @@
 /* YOUR CUSTOM STYLES */
-h1,h2,h3,h4,h5,h6,p,a,span,dt,dd{
-    font-family: "Siyamrupali", Times, serif;
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+h1,h2,.btnText, nav, .gfont{
+    font-family: "Rammetto One", Times, serif !important;
+}
+
+h3,h4,h5,h6,p,a,span,dt,dd{
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 .btnText{
